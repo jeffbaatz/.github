@@ -56,6 +56,12 @@ variable "permission_type" {
   default     = "SERVICE_MANAGED"
 }
 
+variable "grafana_version" {
+  description = "Specifies the version of Grafana to support in the new workspace."
+  type        = string
+  default     = null
+}
+
 variable "configuration" {
   description = "The configuration string for the workspace"
   type        = string
